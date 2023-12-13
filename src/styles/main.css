@@ -1,0 +1,71 @@
+/* inports */
+@import "./general.css";
+
+.app {
+  padding: 10px 20px;
+  background-color: #444;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.section-display {
+  gap: 40px;
+}
+.section-display input {
+  background-color: #ddd;
+  width: 400px;
+  outline: none;
+  border-radius: 7px;
+  padding: 10px;
+  resize: none;
+  border: none;
+}
+.section-display input::placeholder {
+  text-transform: capitalize;
+}
+
+.section-display input:nth-child(2) {
+  background-color: transparent;
+  border: 2px solid #888;
+  color: #309bbd;
+}
+.clear-btn {
+  /* background-color: red; */
+  width: fit-content;
+  height: fit-content;
+  padding: 10px;
+}
+.section-btn {
+  /* background-color: red; */
+  height: max-content;
+  gap: 20px;
+}
+.section-btn > div {
+  width: 100%;
+  /* background-color: blue; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+@media (max-width: 760px) {
+  html {
+    font-size: 150%;
+  }
+  hr {
+    display: none;
+  }
+  .app {
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+  }
+  input {
+    width: 90% !important;
+  }
+}
